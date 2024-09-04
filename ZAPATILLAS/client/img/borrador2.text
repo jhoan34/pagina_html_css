@@ -1,0 +1,112 @@
+.categorias2 {
+    width: 100%;
+    height: 130vh;
+    background-color: #1b1919;
+    border-top: 2px solid var(--color-accent1);
+    border-bottom: 2px solid var(--color-accent1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.caja,.caja2{
+    width: 90%;
+    height: 40%;
+    display: grid;
+}
+
+.categorias,.categorias2 h2{
+    color: var(--color-secondary);
+    margin-top: 20px;
+}
+
+.mujeres{
+    text-align: center;
+    margin-top: 30px;
+    color: var(--color-secondary);
+}
+
+#men,#woman{
+    justify-self: center;
+    width: 900px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+}
+
+.carruseles,.carruseles2{
+    display: grid;
+    grid-template-columns: repeat(8, 225px);
+    grid-template-rows: 98%;
+    transition: 1s;
+    gap: 15px;
+}
+
+.img5,.muj{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+#at,#A{
+    position: absolute;
+    left: 140px;
+    margin-top: 130px;
+    color: var(--color-accent1);
+    font-size: 40px;
+}
+
+#ade,#a{
+    position: absolute;
+    left: 87%;
+    margin-top: 130px;
+    color: var(--color-accent1);
+    font-size: 40px;
+}
+
+/*penultimmo*/
+
+.penultimo{
+    width: 100%;
+    height: 150vh;
+    background-color: rgb(43, 19, 66);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

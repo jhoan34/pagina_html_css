@@ -1,0 +1,209 @@
+/* barra de navegacion */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 400vh;
+    width: 100%;
+}
+
+:root {
+    --color-primary: #000000; /* Negro */
+    --color-secondary: #b4b0b0; /* Blanco */
+    --color-accent1: #FF5733; /* Color de acento 1 */
+    --color-accent2: #33FF57; /* Color de acento 2 */
+    --color-blue:  #3cceae;
+}
+
+/* Estilos base */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  position: fixed;
+  background-color: var(--color-primary);
+  height: 13vh;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 99;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  position: absolute;
+  left: 15px;
+  top: 8px;
+  width: 85px;
+  height: 60px;
+}
+
+.barra-navegacion {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  grid-template-columns: repeat(6, 6%);
+  grid-template-rows: 100%;
+  color: var(--color-accent1);
+  font-size: 16px;
+  gap: 2rem;
+}
+
+.lista {
+  text-align: center;
+  width: 3.9rem;
+  padding: 0.5rem;
+}
+
+.lista:hover {
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--color-secondary);
+}
+
+.bi bi-bag:hover {
+  background-color: var(--color-secondary);
+}
+
+.carrito {
+  position: absolute;
+  right: 6%;
+}
+
+/* Ajustes para pantallas pequeñas */
+
+@media (max-width: 768px) {
+  .header {
+    height: 8vh;
+  }
+
+  .img {
+    left: 5px;
+    top: 5px;
+    width: 65px;
+    height: 45px;
+  }
+
+  .barra-navegacion {
+    gap: 1rem;
+  }
+
+  .lista {
+    width: 3.5rem;
+  }
+}
+
+
+
+
+/* cuerpo*/
+
+.img-fondo {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../client/img/d.jpeg);
+    /* El degradado oscuro está formado por dos puntos rgba(0, 0, 0, 0.5) que representan negro con 50% de opacidad */
+}
+
+.eslogan h2{
+    text-align: center;
+    color: var(--color-blue); 
+    font-size: 30px; /* Tamaño del texto */
+    width: 15%;
+    text-align: center;
+    
+}
+
+.eslogan p{
+    text-align: center;
+    font-size: 15px;
+    color: var(--color-blue);
+} 
+
+
+.categorias {
+    height: 80vh;
+    width: 100%;
+    background-color: #1b1919;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 30%);
+    gap: 25%;
+     
+}
+
+.description-col {
+    position: relative;
+    border-radius: 10px;
+    height: 60vh; 
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.description-col:hover{
+    background-color: #312c2c;
+}
+.description-col h2{
+    position: relative;
+    bottom: 90px;
+    text-align: center;
+    color: var(--color-blue);
+}
+
+.description-col p{
+    text-align: center;
+    color: var(--color-secondary);
+    letter-spacing: 0.2rem;
+}
+
+.img1 {
+    height: 100%; /* Ajustado a 100% para ocupar toda la altura de la fila *//* Añadido para establecer un ancho máximo de 400px */
+    border-radius: 10px;
+    background-image: url(../client/img/gh.jpeg);
+    background-size: 100% 100%;
+
+}
+
+.des-ani{
+    position: relative;
+    top: 79%;
+    background-color: #000000;
+    width: 100%;
+    height: 80px;
+    opacity: 0.8;
+    color: var(--color-accent1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.des-ani:hover{
+    background-color: #9c9191;
+}
+
+
+/* categoriias */

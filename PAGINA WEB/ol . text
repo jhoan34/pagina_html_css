@@ -1,0 +1,17 @@
+
+
+const queryStringToObject = url => {
+  let search = ""
+  try{
+    search = new URL(url).search
+  }catch{
+    return {}
+  }
+
+const params = new URLSearchParams(search)
+return Object.fromEntries(params.entries())
+
+}
+
+const url = "http://a.com?name=midudev&age=20"
+queryStringToObject(url);
